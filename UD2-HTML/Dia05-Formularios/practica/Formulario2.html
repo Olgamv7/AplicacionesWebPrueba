@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <h1>Formulario de registro</h1>
+    <form action="">
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre">
+        <br>
+        <br>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos">
+        <br>
+        <br>
+        <label for="sexo">Sexo: </label>
+        <input type="radio" name="sexo" id="hombre" value="hombre">
+        <label for="hombre">Hombre</label>
+        <input type="radio" name="sexo" id="mujer" value="mujer">
+        <label for="mujer">Mujer</label>
+        <br>
+        <br>
+        <label for="correo">Correo: </label>
+        <input type="email" name="correo" id="correo">
+        <br>
+        <br>
+        <label for="poblacion">Población:</label>
+        <select name="poblacion" id="poblacion">
+            <option value="alicante">Alicante</option>
+            <option value="teruel">Teruel</option>
+            <option value="zaragoza">Zaragoza</option>
+        </select>
+        <br>
+        <br>
+        <label for="descripcion">Descripción:</label>
+        <textarea name="descripcion" id="descripcion" cols="50" rows="5"></textarea>
+        <br>
+        <br>
+        <input type="checkbox" name="info" id="info">
+        <label for="info">Deseo recibir información sobre novedades y ofertas</label>
+        <br>
+        <br>
+        <input type="checkbox" name="condiciones" id="condiciones">
+        <label for="condiciones">Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protrección de datos</label>
+        <br>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

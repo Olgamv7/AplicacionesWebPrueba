@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Más formularios</title>
+</head>
+<body>
+    <h1>RadioButtons en Formularios</h1>
+    <form action="">
+        <fieldset>
+            <legend>Elige tu profesor favorito</legend>
+            <input type="radio" name="profefavorito" id="Pascual" value="Pascual">
+            <label for="Pascual">Pascual</label>
+            <br>
+            <input type="radio" name="profefavorito" id="Juanma" value="Juanma">
+            <label for="Juanma">Juanma</label>
+            <br>
+            <input type="radio" name="profefavorito" id="Lidia" value="Lidia">
+            <label for="Lidia">Lidia</label>
+            <br>
+            <input type="radio" name="profefavorito" id="Mario" value="Mario">
+            <label for="Mario">Mario</label>
+            <br>
+            <input type="radio" name="profefavorito" id="nsnc" value="NoContesta" checked>
+            <label for="nsnc">No quiero decirlo</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Elige tu asignatura favorita</legend>
+            <input type="radio" name="modulofav" id="AWEB" value="AWEB">
+            <label for="AWEB">Aplicaciones Web</label>
+            <br>
+            <input type="radio" name="modulofav" id="SOR" value="SOR">
+            <label for="SOR">Sistemas Operativos en Red</label>
+            <br>
+            <input type="radio" name="modulofav" id="SR" value="SR">
+            <label for="SR">Servicios en Red</label>
+            <br>
+            <input type="radio" name="modulofav" id="SI" value="SI">
+            <label for="SI">Seguridad Informática</label>
+            <br>
+            <input type="radio" name="modulofav" id="nsnc" value="NoContesta" checked>
+            <label for="nsnc">No quiero decirlo</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>¿Cuales son tus preferencias en la cafetería?</legend>
+            <input type="checkbox" name="baconqueso" id="bcqs" value="Banconqueso">
+            <label for="bcqs">Bocadillo de Bacon Queso</label>
+            <br>
+            <input type="checkbox" name="pechuga" id="pechuga" value="Pechuga">
+            <label for="pechuga">Bocadillo de Pechuga de Mayonesa</label>
+            <br>
+            <input type="checkbox" name="brabas" id="brabas" value="PatatasBrabas">
+            <label for="brabas">Bocadillo de Brabas</label>
+            <br>
+            <input type="checkbox" name="lomoqueso" id="lomo" value="LomoQueso">
+            <label for="lomo">Bocadillo de Lomo con Queso</label>
+        </fieldset>
+        <br>
+        <!--<label for="comen"></label>-->
+        <textarea name="comentario" id="comen" rows="10" cols="50" placeholder="Escribe aquí tu comentario"></textarea>
+        <br>
+        <br>
+        <button type="button">Esto es un botón tipo button</button>
+        <button type="reset">Esto es un botón tipo reset</button>
+        <button type="submit">Esto es un boton tipo submit</button>
+        <br>
+        <input type="submit" value="Enviar formulario" >
+    </form>
+</body>
+</html>
