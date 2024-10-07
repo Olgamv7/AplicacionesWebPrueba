@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <h1>Pedido de pizza</h1>
+    <form action="">
+        <fieldset>
+            <legend>La pizza</legend>
+            <p>Ingredientes</p>
+            <input type="checkbox" name="queso" id="queso" value="queso">
+            <label for="queso">Queso</label>
+            <br>
+            <input type="checkbox" name="pimiento" id="pimiento" value="pimiento">
+            <label for="pimiento">Pimiento</label>
+            <br>
+            <input type="checkbox" name="cebolla" id="cebolla" value="cebolla">
+            <label for="cebolla">Cebolla</label>
+            <br>
+            <p>Tamaño</p>
+            <input type="radio" name="tamano" id="pequena" value="pequena">
+            <label for="pequena">Pequeña</label>
+            <br>
+            <input type="radio" name="tamano" id="mediana" value="mediana">
+            <label for="mediana">Mediana</label>
+            <br>
+            <input type="radio" name="tamano" id="grande" value="grande">
+            <label for="grande">Grande</label>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de entrega</legend>
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" id="nombre">
+            <br>
+            <label for="direccion">Dirección: </label>
+            <input type="text" name="direccion" id="direccion">
+            <br>
+            <label for="telefono">Teléfono: </label>
+            <input type="text" name="telefono" id="telefono">
+            <br>
+            <label for="instrucciones">Instrucciones especiales: </label>
+            <br>
+            <textarea name="instrucciones" id="instrucciones" cols="50" rows="20"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Método de pago</legend>
+            <select name="pago" id="pago">
+                <option value="tarjeta">Tarjeta</option>
+                <option value="efectivo">Efectivo</option>
+            </select>
+        </fieldset>
+        <button type="submit">Ok</button>
+    </form>
+</body>
+</html>
