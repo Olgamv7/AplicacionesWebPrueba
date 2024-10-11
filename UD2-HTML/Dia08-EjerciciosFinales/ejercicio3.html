@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <h1>Solicitar Presupuesto</h1>
+    <form action="">
+        <fieldset>
+            <legend>Datos de Contacto</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Escribe su nombre">
+            <br>
+            <br>
+            <label for="direccion">Dirección: </label>
+            <input type="text" id="direccion" placeholder="Escriba su dirección">
+            <br>
+            <br>
+            <label for="mail">E-mail:</label>
+            <input type="email" name="mail" id="mail" placeholder="Escriba su e-mail">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Datos del Trabajo</legend>
+            <label for="habs">Número de habitaciones:</label>
+            <input type="number" name="habs" id="habs">
+            <br>
+            <br>
+            <label for="color">Color: </label>
+            <input type="color" name="color" id="color">
+            <br>
+            <br>
+            <input type="checkbox" name="techo" id="techo">
+            <label for="techo">Incluye pintar el techo</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Otra Información</legend>
+            <textarea name="otraInfo" id="otraInfo" rows="12" cols="92"></textarea>
+        </fieldset>
+        <br>
+        <button type="submit">Enviar formulario</button>
+        <button type="reset">Borrar formulario</button>
+    </form>
+</body>
+</html>

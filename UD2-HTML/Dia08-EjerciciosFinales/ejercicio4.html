@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <img src="img/pizza.jpg" alt="Imágen de una pizza" width="50%">
+    <form action="">
+        <fieldset>
+            <legend>Configura tu Pizza</legend>
+            <label for="masa">Tipo de masa </label>
+            <select name="masa" id="masa">
+                <option value="fina">Masa fina</option>
+                <option value="gorda">Masa gorda</option>
+            </select>
+            <br>
+            <br>
+            <label for="salsa">Tipos de salsa:</label>
+            <select name="salsa" id="salsa">
+                <option value="tomate">Tomate</option>
+                <option value="barbacoa">Barbacoa</option>
+                <option value="carbonara">Carbonara</option>
+            </select>
+            <br>
+            <br>
+            <label for="queso">Queso: </label>
+            <input type="radio" name="queso" id="quesosi">
+            <label for="quesosi">Si</label>
+            <input type="radio" name="queso" id="quesono">
+            <label for="quesono">No</label>
+            <br>
+            <br>
+            <div>
+            <label for="ingredientes">Ingredientes: </label>
+            <br>
+            <input type="checkbox" name="ingredientes" id="tomate">
+            <label for="tomate">Tomate</label>
+            <input type="checkbox" name="ingredientes" id="mozzarella">
+            <label for="mozzarella">Mozzarella</label>
+            <input type="checkbox" name="ingredientes" id="quesos">
+            <label for="quesos">Quesos variados</label>
+            <input type="checkbox" name="ingredientes" id="italianos">
+            <label for="italianos">Embutidos italianos</label>
+            <input type="checkbox" name="ingredientes" id="picantes">
+            <label for="picantes">Embutidos picantes</label>
+            <input type="checkbox" name="ingredientes" id="aceitunas">
+            <label for="aceitunas">Aceitunas</label>
+            <input type="checkbox" name="ingredientes" id="champinones">
+            <label for="champinones">Champiñones</label>
+            <input type="checkbox" name="ingredientes" id="pimientos">
+            <label for="pimientos">Pimientos</label>
+            <input type="checkbox" name="ingredientes" id="atun">
+            <label for="atun">Atún</label>
+            <input type="checkbox" name="ingredientes" id="albahaca">
+            <label for="albahaca">Albahaca fresca</label>
+            <br>
+            <br>
+            </div>
+            <label for="tamano">Tamaño:</label>
+            <select name="tamano" id="tamano">
+                <option value="pequena">Pequeña</option>
+                <option value="mediana">Mediana</option>
+                <option value="grande">Grande</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Datos de Pago</legend>
+            <label for="cuenta">Número de cuenta:</label>
+            <input type="text" id="cuenta" placeholder="Escriba el numro de cuenta">
+            <br>
+            <br>
+            <label for="caducidad">Mes de caducidad:</label>
+            <input type="text" id="caducidad" placeholder="Fecha de caducidad">
+            <br>
+            <br>
+            <label for="codigo">Código de seguridad: </label>
+            <input type="text" id="codigo" placeholder="Escriba el código">
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Datos de Entrega</legend>
+            <label for="direccion">Dirección completa: </label>
+            <input type="text" id="direccion" placeholder="Escriba su dirección">
+            <br>
+            <br>
+            <label for="observaciones">Datos extra:</label>
+            <br>
+            <textarea name="observaciones" id="observaciones" cols="40" rows="5"></textarea>
+        </fieldset>
+        <br>
+        <br>
+        <button type="submit">Enviar formulario</button>
+        <button type="reset">Borrar el formulario</button>
+    </form>
+</body>
+</html>
