@@ -1,0 +1,11 @@
+/*AQUÍ TODO NUESTRO CÓDIGO ES CSS*/
+
+/* Selectores: Con los nombres de las etiquetas*/
+h1, p {
+    color: yellowgreen;
+}
+
+div > section > p {
+    color: tomato;
+}
+
