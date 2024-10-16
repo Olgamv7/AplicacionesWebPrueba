@@ -1,0 +1,36 @@
+/* Selector UNIVERSAL 
+* {
+    color: blue;
+}
+*/
+
+/* Selector de ETIQUETA */
+/*Selectores combinados */  
+h2, p {
+    color: green;
+    background-color: rgba(255, 218, 185, 0.459);
+}
+
+/*Todos los párafos contenidos en un section*/
+section p {
+    color: red;
+}
+
+section > p {
+    color: red;
+}
+
+/*Selector de CLASE*/
+.textoazul {
+    color: blue;
+}
+
+/*Selectores de IDENTIFICADOR*/
+#articulo2 {
+    text-align: end;
+    background-color: blueviolet;
+}
+
+#articulo1 p, .textoazul {
+    color: black;
+}
