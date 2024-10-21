@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Propiedades CSS</title>
+    <style>
+        body {
+            background-color:grey;
+        }
+        h1 {
+            color: blue;
+        }
+        hr {
+            border-color: red;
+            border-style: solid;
+            border-width: 6px;
+            /*border hace lo mismo de la siguiente manera:
+            border: 1px solid red; */
+            border-radius: 10%;
+        }
+        h2 {
+            font-family: 'Comic Sans Ms', sans-serif;
+        }
+        p {
+            font-size: 20px;
+            font-weight: normal;
+        }
+        /*Coge el tamaño con relación al elemento padre
+        span {
+            font-size: .8em;
+            font-style: italic;
+        } */
+        
+        .negrita {
+            font-weight: bold;
+        }
+        .cursiva {
+            font-style: italic;
+        }
+        .alberto {
+            /*end, start center y justify*/
+            text-align: justify;
+        }
+        .smr2 {
+            /*line-through es tachado*/
+            /*overline es linea por encima del texto*/
+            text-decoration: overline;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propiedades de CSS</h1>
+    <hr>
+    <h2>Colores con transparencia</h2>
+    <p>Esto <span>es un párrafo</span> que incluimos en nustra web</p>
+    <p class="alberto"><span class="negrita cursiva">Lorem ipsum</span> dolor sit amet consectetur adipisicing elit. <span class="negrita">Eum quos</span> repellendus architecto blanditiis, laborum adipisci ipsam voluptatum consequuntur officiis labore quibusdam dignissimos quas sint animi.</p>
+    <p class="smr2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, voluptatibus!</p>
+    <a href="http://www.google.es">Ir a Google</a>
+</body>
+</html>
