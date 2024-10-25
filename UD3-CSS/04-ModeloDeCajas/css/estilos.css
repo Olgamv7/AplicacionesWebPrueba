@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(240, 134, 48);
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*-------------------------MENU----------------------*/
+.menu {
+    background-color: black;
+    display: inline-flex;
+}
+
+.menu a {
+    text-decoration: none;
+    color: orange;
+    padding: 10px;
+}
+
+.menu a:hover {
+    color: purple;
+    background-color: aliceblue;
+}
+
+.menu a.active {
+    background-color: aliceblue;
+    color: purple;
+}
+
+/*----------------------REDES SOCIALES-----------------------*/
+.social {
+    margin: 30px;
+    background-color: black;
+    display: inline-flex;
+}
+
+.social a {
+    padding: 10px;
+    color: orange;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.social a:hover {
+    color: purple;
+}
+
+/*------------------------BOTON-----------------------------*/
+.boton a {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.boton a:hover {
+    color: red;
+    background-color: white;
+}
