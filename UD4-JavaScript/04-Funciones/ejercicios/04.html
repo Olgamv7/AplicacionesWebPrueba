@@ -5,13 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4</title>
     <script>
-        let base = 5
+        /*let base = 5
         let altura = 10
         let area = base * altura / 2
-        console.log("El área de un triangulo de " + base + " y " + altura + " es de " + area)
+        console.log("El área de un triangulo de " + base + " y " + altura + " es de " + area)*/
+        function areaTriangulo(base, altura) {
+            let area = (base * altura) / 2;
+            return area;
+        }
+
+        function botonTriangulo() {
+            let base = parseInt(prompt("Escribe la BASE del triángulo:"));
+            let altura = parseInt(prompt("Escribe la ALTURA del triángulo:"));
+            let area = areaTriangulo(base, altura);
+            alert("El área de tu triángulo es: " + area);
+        }
     </script>
 </head>
 <body>
-    
+    <button onclick='botonTriangulo()'>Area de un triángulo</button>
 </body>
 </html>

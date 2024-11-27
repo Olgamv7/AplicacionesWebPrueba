@@ -5,8 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3</title>
     <script>
-        let esPar = parseInt(prompt("Dime un número"))
+        /*let esPar = parseInt(prompt("Dime un número"))*/
+    
+        ////PAR O IMAR ////
+        //DEVULVE SI ES PAR O IMPAR 
+        function esPar(numero) {
+            if (numero % 2 == 0) {
+                return true
+            } else {
+                return false
+            }
+        }
+
+        let numero = parseInt(prompt("Dame un número:"))
         
+        let par = esPar(numero)
+        
+        if (par == true) {
+            console.log("El numero es par")
+        } else {
+            console.log("El número es impar")
+        }
     </script>
 </head>
 <body>
