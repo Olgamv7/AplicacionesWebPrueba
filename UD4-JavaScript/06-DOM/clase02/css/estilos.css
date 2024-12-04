@@ -1,0 +1,12 @@
+.contenido {
+    background-color: rgba(211, 211, 211, 0.637);
+}
+button {
+    background-color: lightpink;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#miTexto {
+    display: block;
+}
