@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repasar grid</title>
+    <script src="javas.js"></script>
+    <style>
+        .contenedor > div {
+            border-radius: 5px;
+            padding: 1em;
+            border-radius: 10px;
+        }
+
+        .contenedor {
+            background-color: lightsalmon;
+            padding: 10px;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 100px 100px 100px;
+            gap: 5px;
+        }
+
+        .item1 {
+            background-color: blueviolet;
+            grid-column: 1 / 3;
+        }
+
+        .item2 {
+            background-color: aquamarine;
+            grid-row: 1 / 3;
+            grid-column: 3 / 4;
+        }
+
+        .item3 {
+            background-color: brown;
+            grid-row: 2 / 4;
+        }
+
+        .item4 {
+            background-color: cornflowerblue;
+        }
+
+        .item5 {
+            background-color: darkmagenta;
+            grid-column: 2 / 4;
+        }
+
+        .calculadora {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            background-color: lightcoral;
+        }
+
+        
+        div > .cosas {
+            margin: 10px;
+        }
+        button, input {
+            border-radius: 7px;
+        }
+
+        button {
+            background-color: lightblue;
+        }
+
+        button:hover {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    <hr>
+    <div class="calculadora">
+        <h2>Calculadora</h2>
+        <input type="number" name="num1" id="num1" placeholder="Primer número">
+        <input type="number" name="num2" id="num2" placeholder="Segundo número">
+        <div class="cosas">
+            <button onclick='sumar()'>Sumar</button>
+            <button onclick='restar()'>Restar</button>
+        </div>
+        <div class="resultado" id="resultado"></div>
+    </div>
+    <hr>
+    <button id="boton" onclick='color()'>Cambiar color de fondo</button>
+</body>
+</html>
