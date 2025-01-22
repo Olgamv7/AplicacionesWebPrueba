@@ -10,30 +10,31 @@
 <header>
     <div class="mb-2 bg-primary-subtle text-primary-emphasis text-center">
         <h1>Mi página personal lol</h1>
-        <p>Mis datos de contacto</p>
+        <p>Contáctame :D</p>
         <div>
             <a href="index.html" class="text-decoration-none">Inicio</a>
             <a href="galeria.html" class="text-decoration-none">Galería</a>
             <a href="listadoYTablas.html" class="text-decoration-none">Listado y tablas</a>
         </div>
     </div>
-</header>
+
+</header>  
 
 <body class="p-3 mb-2 bg-dark text-white">
     <img src="../img/paisaje.jpg" alt="imágen de un paisaje" class="img-fluid mx-auto d-block">
 
     <div class="container mt-5">
         <form>
-            <div class="alert alert-danger alert-dismissible d-none">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, tempore.
-                <button class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+            <div id="alertaSuccess" class="alert alert-success alert-dismissible d-none">
+                Lorem ipsum dolor sit amet.
+                <button class="btn-close" onclick="esconderAlertaS()" aria-label="close"></button>
             </div>
-            <div class="alert alert-success alert-dismissible d-none">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, dolores!
-                <button class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+            <div id="alertaDanger" class="alert alert-danger alert-dismissible d-none">
+                Lorem ipsum dolor sit amet.
+                <button class="btn-close" onclick="esconderAlertaD()" aria-label="close"></button>
             </div>
 
-            <div class="row">
+            <div class="row"> <!--Nombre-->
                 <div class="col-12 col-sm-2 col-md-1">
                     <label for="nombre" class="form-label mt-3">Nombre</label>
                 </div>
@@ -43,7 +44,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row"> <!--Email-->
                 <div class="col-12 col-sm-2 col-md-1">
                     <label for="mail" class="form-label mt-3">Email</label>
                 </div>
@@ -53,7 +54,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row"> <!--Asunto-->
                 <div class="col-12 col-sm-2 col-md-1">
                     <label for="asunto" class="form-label mt-3">Asunto</label>
                 </div>
@@ -64,7 +65,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row"> <!--Mensaje-->
                 <div class="col-12 col-sm-2 col-md-1">
                     <label for="mensaje" class="form-label mt-3">Mensaje</label>
                 </div>
@@ -74,7 +75,33 @@
                 </div>
             </div>
         </form>
+        
+        <div class="mt-3 row">
+            <div class="col-2"></div>
+            <div class="col-10">
+                <button onclick='muestraAlertaS()' class="btn btn-success">Enviar</button>
+                <button onclick='muestraAlertaD()' class="btn btn-danger">Enviar</button>
+            </div>
+        </div>
     </div>
+    <script> 
+        function muestraAlertaS() {
+            document.getElementById("alertaSuccess").classList.remove("d-none")
+
+        }
+        function esconderAlertaS() {
+            document.getElementById("alertaSuccess").classList.add("d-none")
+        }
+
+        
+        function muestraAlertaD() {
+            document.getElementById("alertaDanger").classList.remove("d-none")
+        }
+        function esconderAlertaD() {
+            document.getElementById("alertaDanger").classList.add("d-none")
+        }
+
+    </script>
 </body>
 
 <footer>
