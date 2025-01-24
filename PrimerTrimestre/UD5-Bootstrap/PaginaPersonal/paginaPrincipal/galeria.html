@@ -10,6 +10,10 @@
         .click {
             cursor: pointer;
         }
+        .centrar {
+            display: flex;
+            justify-content: center;
+        }
     </style>
 </head>
 <header>
@@ -24,64 +28,83 @@
     </div>
 
 </header>
-
 <body class="p-3 mb-2 bg-dark text-white">
-    <img src="../img/paisaje.jpg" alt="imágen de un paisaje" class="img-fluid mx-auto d-block">
+    <img src="../img/OnePiece.jpg" alt="imágen de los personajes de One Piece" class="img-fluid mx-auto d-block">
 
-    <div class="container">
-
-        <!--Imgánes clickeables-->
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+    <div class="container text-center">
+    
+        <div class="container">
+            <div class="row">
+                <img src="../img/merry.jpg" onclick="imagenCambio('../img/merry.jpg')" id="img1" class="mt-4 img-fluid col-12 col-sm-4 col col-md-2">
+                <img src="../img/luffy.jpg" onclick="imagenCambio('../img/luffy.jpg')" id="img2" class="mt-4 img-fluid col-12 col-sm-4 col col-md-2">
+                <img src="../img/zoro.jpg" onclick="imagenCambio('../img/zoro.jpg')" id="img3" class="mt-4 img-fluid col-12 col-sm-4 col col-md-2">
+                <img src="../img/nami.jpg" onclick="imagenCambio('../img/nami.jpg')" id="img4" class="mt-4 img-fluid col-12 col-sm-4 col col-md-2">
+                <img src="../img/sanji.jpg" onclick="imagenCambio('../img/sanji.jpg')" id="img5" class="mt-4 img-fluid col-12 col-sm-4 col col-md-2">
+                <img src="../img/sunny.jpg" onclick="imagenCambio('../img/sunny.jpg')" id="img6" class="mt-4 img-fluid col-12 col-sm-4 col col-md-2">
+                <img src="../img/ussopp.jpg" onclick="imagenCambio('../img/ussopp.jpg')" id="img7" class="mt-4 img-fluid col-12 col-sm-4 col col-md-2">
+                <img src="../img/chopper.jpg" onclick="imagenCambio('../img/chopper.jpg')" id="img8" class="mt-4 img-fluid col-12 col-sm-4 col col-md-2">
+                <img src="../img/robin.jpg" onclick="imagenCambio('../img/robin.jpg')" id="img9" class="mt-4 img-fluid col-12 col-sm-4 col col-md-2">
+                <img src="../img/franky.jpg" onclick="imagenCambio('../img/franky.jpg')" id="img10" class="mt-4 img-fluid col-12 col-sm-4 col col-md-2">
+                <img src="../img/brook.jpg" onclick="imagenCambio('../img/brook.jpg')" id="img11" class="mt-4 img-fluid col-12 col-sm-4 col col-md-2">
+                <img src="../img/jinbei.jpg" onclick="imagenCambio('../img/jinbei.jpg')" id="img12" class="mt-4 img-fluid col-12 col-sm-4 col col-md-2">
             </div>
-            <div class="carousel-inner mt-5">
-                <div class="carousel-item active">
-                    <img src="../img/1h.jpg" class="d-block w-100">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Primer título</h5>
-                        <p>Descripción 1</p>
+    
+            <img id="imgGrande" src="../img/luffy.jpg" class="mt-5 col-5">
+        </div>
+    
+        <div class="container centrar">
+            <div id="carouselExampleAutoplaying" class="carousel slide col-6 centrar" data-bs-ride="carousel" data-bs-theme="dark">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner mt-5">
+                    <div class="carousel-item active">
+                        <img src="../img/onePieceColorSpread1.jpg" class="d-block w-100">
+                        <!--<div class="carousel-caption d-none d-md-block">
+                            <h5>Primer título</h5>
+                            <p>Descripción 1</p>
+                        </div>-->
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/onePieceColorSpread2.jpg" class="d-block w-100">
+                        <!--<div class="carousel-caption d-none d-md-block">
+                            <h5>Segundo título</h5>
+                            <p>Descripción 2</p>
+                        </div>-->
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/onePieceColorSpread3.jpg" class="d-block w-100">
+                        <!--<div class="carousel-caption d-none d-md-block">
+                            <h5>Tercer título</h5>
+                            <p>Descripción 3</p>
+                        </div>-->
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="../img/2h.jpg" class="d-block w-100">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Segundo título</h5>
-                        <p>Descripción 2</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/3h.jpg" class="d-block w-100">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Tercer título</h5>
-                        <p>Descripción 3</p>
-                    </div>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
-        </div>
+    </div>
 </body>
 
 <footer>
     <div class=" mt-4 mb-2 bg-primary-subtle text-primary-emphasis text-center">
         <div class="row">
-            <div class="col-12 col-sm-6 col-md-6"><h1 class="h5">Datos de contacto</h1><p>Olga Mor Vivas</p><p>omorv@iesch.org</p></div>
-            <div class="col-12 col-sm-6 col-md-6"><h1 class="h5">algo</h1>no se que poner</div>
+            <div class="col-12 col-sm-6 col-md-6 "><h1 class="h5">Datos de contacto</h1><p>Olga Mor Vivas</p><p>omorv@iesch.org</p></div>
+            <div class="col-12 col-sm-6 col-md-6 "><p>Si tienes hambre come.</p><cite title="Luffy">Monkey D. Luffy</cite></div>
         </div>
     </div>
 </footer>
